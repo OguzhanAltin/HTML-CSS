@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nested Flexbox Practice</title>
+
+  <style>
+
+              /* 1. Egzersiz */
+
+    .flexbox {
+      display: flex;
+      flex-direction: row;
+      height: 50px;
+    }
+
+    .column1 {
+      width: 100px;
+      background-color: lightpink;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .item1 {
+      background-color: black;
+      color: white;
+    }
+
+    .column2 {
+      width: 200px;
+      background-color: lightblue;
+    }
+
+            /* 2. Egzersiz */
+
+       .flexbox-1 {
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+        margin-top: 50px;
+       }     
+
+       .column-1 {
+        background-color: lightpink;
+        width: 100px;
+       }
+
+       .column-2 {
+        background-color: lightblue;
+        width: 200px;
+       }
+
+       .row2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+       }
+
+       .row2-item {
+        background-color: black;
+        color: white;
+       }
+
+  </style>
+
+</head>
+<body>
+
+        <!-- 1. Egzersiz -->
+  <div class="flexbox">
+    <div class="column1">
+      <div class="item1">item1</div>
+    </div>
+    <div class="column2"></div>
+  </div>
+
+   <!-- 2. Egzersiz -->
+  <div class="flexbox-1">
+    <div class="column-1"></div>
+    <div class="column-2">
+      <div>row1</div>
+      <div class="row2">
+        <div class="row2-item">row2</div>
+       <div class="row2-item">row2</div>
+      </div>     
+    </div>
+  </div>
+</body>
+</html>
